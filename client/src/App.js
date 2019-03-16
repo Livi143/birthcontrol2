@@ -8,6 +8,11 @@ import TopNav from "./components/TopNav";
 import Footer from "./components/Footer";
 import { Container } from 'reactstrap';
 
+//newly added 
+
+import Create from "./components/LogInfo/createLog";
+
+
 function App() {
   return (
       <Router>
@@ -19,6 +24,9 @@ function App() {
               <Route exact path="/signup" render={(props) => <Auth {...props} action="signup" />} />
               <Route exact path="/login" render={(props) => <Auth {...props} action="login" />} />
               <Route exact path="/profile" component={Profile} />
+              <Route exact path="/create" component={Create} />
+              {/* <Route path="/edit/:id" component={Edit} />
+              <Route path="/index" component={Index}/> */}
               <Route component={NoMatch} />
             </Switch>
           </Container>
