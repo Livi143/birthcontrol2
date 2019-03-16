@@ -6,31 +6,31 @@ const LogSchema = new Schema ({
     type: Schema.Types.ObjectId,
     ref: "User"
   },
-    log_temp: {
+    temp: {
         type: Number,
         required: true 
     },
-    log_weight: {
+    weight: {
         type: Number,
         required: true
     },
-    log_sleep: {
+    sleep: {
         type: Number,
         required: true
     },
-    log_spotting: {
+    spotting: {
         type: Number,
         required: true
     },
-    log_hungover: {
+    hungover: {
         type: Boolean,
         required: true
     },
-    log_bc: {
+    bc: {
         type: Boolean,
         required: true
     },
-    log_symptoms: {
+    symptoms: {
         type: String,
         required: false
     }

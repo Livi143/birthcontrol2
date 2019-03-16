@@ -37,13 +37,13 @@ class TempCollect extends Component {
        
         if(this.state.loggedIn){
             const log ={
-                log_temp: Number(this.state.temp),
-                log_weight: Number(this.state.weight),
-                log_sleep: Number(this.state.sleep),
-                log_spotting: Number(this.state.spotting),
-                log_hungover: this.state.hungover,
-                log_bc: this.state.bc,
-                log_symptoms: this.state.symptoms,
+                temp: Number(this.state.temp),
+                weight: Number(this.state.weight),
+                sleep: Number(this.state.sleep),
+                spotting: Number(this.state.spotting),
+                hungover: this.state.hungover,
+                bc: this.state.bc,
+                symptoms: this.state.symptoms,
                 _userId:this.state.user._id
             }
     
