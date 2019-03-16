@@ -26,6 +26,10 @@ export default {
     return axios.get("/api/users/logout")
   },
 
+  addLog: function(log){
+    return axios.post("/api/logs", log)
+  },
+
   // api that gets a random Chuck Norris Joke
   ChuckNorris: function() {
     return axios.get("https://api.icndb.com/jokes/random");
