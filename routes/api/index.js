@@ -6,7 +6,7 @@ const logRoutes = require("./logRoutes");
 //user routes
 router.use("/users", userRoutes);
 //log routes
-router.use("/log", logRoutes);
+router.use("/logs", logRoutes);
 
 // For anything else, render the html page
 router.use(function(req, res) {
