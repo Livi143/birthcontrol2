@@ -165,7 +165,7 @@ class TempCollect extends Component {
                     </div>
                     <br />
                     <br />
-                    <i class="fas fa-cocktail"></i> <label for="BC">Did You take Your Birth Control?</label>
+                    <i class="fas fa-capsules"></i> <label for="BC">Did You take Your Birth Control?</label>
                     <div class="radio">
                         <label>
                             <input

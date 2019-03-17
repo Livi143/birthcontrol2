@@ -181,7 +181,7 @@ export default class Create extends Component {
                     <br/>
 
                     
-                    <i className="fas fa-pills"></i> <label for="birthcontrol">Did you take your birth control?</label>
+                    <i className="fas fa-cocktail"></i> <label for="birthcontrol">Did you take your birth control?</label>
                     <div className="checkbox">
                         <label>
                             <input onChange={this.onChangeBirthControl} type="checkbox" id="blankCheckbox" value="yes" aria-label="..."></input> Yes
