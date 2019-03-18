@@ -83,16 +83,16 @@ class Profile extends Component {
                    <h4>Want to see a Doctor?</h4>
                 
                    <p>
-                    <ul><a href= "https://www.plannedparenthood.org/health-center">Schedule an Appointment</a></ul>
+                    <ul><a href= "https://www.plannedparenthood.org/health-center" target="_blank" > Schedule an Appointment</a></ul>
                    </p>
                    </Col>
 
                    <Col className="informational" id="links">
                    <h4>Informational Links</h4>
                    <p>
-                       <ul><a href= "https://www.plannedparenthood.org/">Planned Parenthood Main Page</a></ul>
-                       <ul><a href= "https://www.womenshealth.gov/"> Office of Women's Health</a></ul>
-                       <ul><a href= "https://www.globalfundforwomen.org/womens-human-rights/#.XJAXipNKh-U"> Global Fund for Women</a></ul>
+                       <ul><a href= "https://www.plannedparenthood.org/"target="_blank" >Planned Parenthood Main Page</a></ul>
+                       <ul><a href= "https://www.womenshealth.gov/"target="_blank" > Office of Women's Health</a></ul>
+                       <ul><a href= "https://www.globalfundforwomen.org/womens-human-rights/#.XJAXipNKh-U" target="_blank"> Global Fund for Women</a></ul>
                    </p>
                    </Col>
                    </Row>
