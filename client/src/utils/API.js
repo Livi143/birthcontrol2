@@ -29,6 +29,10 @@ export default {
   addLog: function(log){
     return axios.post("/api/logs", log)
   },
+   
+  getLogs: function(id){
+    return axios.get("/api/logs/" + id)
+  },
 
   // api that gets a random Chuck Norris Joke
   ChuckNorris: function() {

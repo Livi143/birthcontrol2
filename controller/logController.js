@@ -5,9 +5,9 @@ module.exports= {
 // Find one note
 find: function(req, res) {
   console.log(req.user)
-    db.Log.find({ _userId: req.params.id }).then(function(dbLog) {
-      res.json(dbLog);
-    });
+    // db.Log.find({ _userId: req.params.id }).then(function(dbLog) {
+    //   res.json(dbLog);
+    // });
   },
   // Create a new log
   create: function(req, res) {
@@ -22,7 +22,9 @@ find: function(req, res) {
     db.Log.remove({ _id: req.params.id }).then(function(dbLog) {
       res.json(dbLog);
     });
-  }
+  },
+
+
 
 
 
