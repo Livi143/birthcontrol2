@@ -3,10 +3,15 @@ import {
     Card, CardText, CardBody,
     CardTitle
 } from 'reactstrap';
+import styled from "styled-components"
+
+const CardDiv = styled.div`
+margin:5px;
+`
 
 const Cards = (props) => {
     return (
-        <div>
+        <CardDiv>
             <Card key={props.keys} >
                 <CardBody>
                     <CardTitle>{props.date ? props.date: "no date"}</CardTitle>
@@ -23,7 +28,7 @@ const Cards = (props) => {
 
                 </CardBody>
             </Card>
-        </div>
+        </CardDiv>
     );
 };
 
