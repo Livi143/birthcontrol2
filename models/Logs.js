@@ -33,7 +33,12 @@ const LogSchema = new Schema ({
     symptoms: {
         type: String,
         required: false
+    },
+    date: { 
+        type: Date, 
+        default: Date.now 
     }
+
 });
 
 const Log = mongoose.model("Log", LogSchema);

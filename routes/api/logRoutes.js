@@ -11,13 +11,21 @@ router.post("/", authMiddleware.isLoggedIn, function(req, res, next) {
     db.Log.create(req.body)
 	.then(dbLog => res.json(dbLog))
 	.catch(err => res.status(422).json(err));
-
-    
 });
 
 
+// router.get ("/:id",authMiddleware.loggedIn, function(req,res,next) {
+//     db.Log.find({ _userId: req.params.id })
+//         .then(dbLog => res.json(dbLog))
+//         .catch(err => res.status(422).json(err));
+// });
+
+
+
+
+
 // router.get("/", function(req, res) {
-//     db.log.find(function(err, logs){
+//     db.log.findAll(function(err, logs){
 //         if(err) {
 //             console.log(err);
 //         } else {
@@ -81,7 +89,7 @@ router.get("/", function(req, res) {
 
 router.get('/:id', function(req, res) {
 let id = req.params.id;
-db.Log.findById(id, function(err, log) {
+db.Log.find({_userId:id}, function(err, log) {
     res.json(log);
     });
 });
