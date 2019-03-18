@@ -35,4 +35,44 @@
             text-align: center
         }
     }
+
+
+    .profilePhoto {
+        #flow {
+            border-style: bold;
+            border-color: blue
+        }
+        #calendar {
+            border-style: solid;
+        }
+    }
+
+
+
+    .undecided {
+        #undecidedNow {
+            border-style: solid;
+        }
+    }
+
+    .taken {
+        #reminder {
+            border-style: solid;  
+        }
+
+    }
+
+    .appointment {
+        #schedule {
+            border-style: solid;  
+        }
+    }
+
+    .informational {
+        #links {
+            border-style: solid;   
+        }
+    }
+
+
 }
