@@ -2,6 +2,7 @@
 
 import React, { Component } from "react";
 import API from "../../utils/API";
+
 class TempCollect extends Component {
     state = {
         temp: "",
@@ -54,7 +55,7 @@ class TempCollect extends Component {
 
     render() {
         return (
-            <div style={{ marginTop: 10 }}>
+            <div style={{ marginTop: 10, marginBottom: 10 }}>
                 <h3>Log your temperature and any symptoms or notes you have!!</h3>
                 <br />
                 <br />
@@ -122,6 +123,7 @@ class TempCollect extends Component {
                         </select>
                     </div>
                     <br />
+
                     <div class="form-group">
                         <i class="fas fa-tint"></i> <label for="spotting"> If any, how would you rate your spotting?</label>
                         <select class="form-control" name="spotting" onChange={this.handleInputChange}
@@ -197,7 +199,8 @@ class TempCollect extends Component {
                     <textarea class="form-control" name="symptoms" rows="3" placeholder="What symptoms are you experiencing?" onChange={this.handleInputChange}
                         value={this.state.symptoms} ></textarea>
                     <br />
-                    <button type="submit" onClick={this.handleButtonClick} class="btn btn-primary">Log Entry</button>
+                    <button type="submit" onClick={this.handleButtonClick} class="btn btn-primary" Button color="success">Log Entry</button>
+                
                 </form>
 
             </div>
