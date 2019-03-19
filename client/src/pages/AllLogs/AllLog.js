@@ -42,12 +42,14 @@ class AllLogs extends Component {
 
 
     render() {
+        console.log(this.state.logs)
         return (
+            
             <div style={{ marginTop: 10 }}>
                 
                 {this.state.logs.length ? (
               <div>
-                {this.state.logs.map(log => <Card key={log._id} keys={log._id} bc={log.log_bc} hungover={log.log_hungover} sleep={log.log_sleep} spotting={log.log_spotting} symptoms= {log.log_symptoms} temp={log.log_temp} weight= {log.log_weight} date ={log.date} /> )}
+                {this.state.logs.map(log => <Card key={log._id} keys={log._id} bc={log.bc} hungover={log.hungover} sleep={log.sleep} spotting={log.spotting} symptoms= {log.symptoms} temp={log.temp} weight= {log.weight} date ={log.date} /> )}
               </div>
             ) : (
               <h3>No Results to Display</h3>
