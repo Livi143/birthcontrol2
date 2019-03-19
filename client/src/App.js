@@ -11,7 +11,7 @@ import { Container } from 'reactstrap';
 import allLogs from "./pages/AllLogs";
 //newly added 
 
-import Create from "./components/LogInfo/createLog";
+
 
 
 function App() {
@@ -26,7 +26,6 @@ function App() {
               <Route exact path="/login" render={(props) => <Auth {...props} action="login" />} />
               <Route exact path="/profile" component={Profile} />
               <Route exact path="/log" component={TempCollect} />
-              <Route exact path="/create" component={Create} />
               <Route exact path="/allLogs" component={allLogs} />
               {/* <Route path="/edit/:id" component={Edit} />
               <Route path="/index" component={Index}/> */}
