@@ -53,6 +53,7 @@ class TempCollect extends Component {
         }
     }
 
+
     render() {
         return (
             <div style={{ marginTop: 10, marginBottom: 10 }}>

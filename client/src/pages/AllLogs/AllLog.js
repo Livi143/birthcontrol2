@@ -8,13 +8,16 @@ import Card from "../../components/Card";
 class AllLogs extends Component {
     state = {
         user: null,
-        logs: []
+        logs: [],
+        todaysTemp: "",
+        yesterdaysTemp: ""
+        // timeSinceLastCycle: 
     }
 
     getLogs(id) {
         console.log("in.getLogs")
         API.getLogs(id).then(logs => {
-            this.setState({logs:logs.data})
+            this.setState({logs:logs.data, todaysTemp:logs.data[logs.data.length].temp, yesterdaysTemp:logs.data[logs.data.length-1].temp})
             
         }).catch(err => {
             console.log(err);
@@ -33,6 +36,7 @@ class AllLogs extends Component {
         }).then(()=>{
             console.log("second.then")
             this.getLogs(this.state.user._id)
+            essentialAlgorithm(this.state.todaysTemp, this.state.yesterdaysTemp)
         }).catch(err => {
             console.log(err);
         });
@@ -40,6 +44,18 @@ class AllLogs extends Component {
 
 
 
+
+essentialAlgorithm = (todaysTemp, yesterdaysTemp) =>{
+     dif = todaysTemp - yesterdaysTemp;
+    if ((dif)>=.05) {
+        console.log("careful! You are potentially fertile now and can be for the next five days. If you have had unprotected sex within the last five days you run the risk of becoming pregnant.");
+        
+    } else if (((dif)!>=.05) && timeSinceLastCycle >= 9) {
+        console.log("you are not currently fertile but you are due to become so within the next few days. Play it safe!");
+    } else {
+        console.log("you are not currently fertile, enjoy aunt Flow");
+    }
+}
 
     render() {
         console.log(this.state.logs)
