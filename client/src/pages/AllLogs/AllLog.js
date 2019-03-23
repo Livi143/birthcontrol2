@@ -76,9 +76,6 @@
 // }
 
 // export default AllLogs;
-
-
-====================
 // listens for click to run algoritm 
 
 import React, { Component } from "react";
